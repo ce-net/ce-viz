@@ -1,3 +1,16 @@
+# DEPRECATED — do not use
+
+Built 2026-07-24 in parallel-invention error: the fleet already had the visualization core —
+the per-app VIZ-CELL pattern (recursive-frontend v1: <app>-viz repos with cecomponents.toml,
+transmitted by ce-comp) and ce-topo (<ce-topo-map>, the aggregator map). This repo duplicated
+both with different names and is retired the same day.
+
+Use instead:
+- Per-app visualization: the <app>-viz cell pattern (reference: github.com/ce-net/rdev-viz);
+  the loppis stack's cell is github.com/ce-net/loppis-viz.
+- Fleet-wide live map: github.com/ce-net/ce-topo.
+
+Nothing depends on this repo (loppis-web was moved off it the same day). Safe to delete.
 # ce-viz — watch the mesh work
 
 A reusable, zero-integration visualization of live CE mesh traffic, shipped as a single web
