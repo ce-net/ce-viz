@@ -1,0 +1,9 @@
+[app]
+name = "ce-viz"
+version = "0.1.0"
+summary = "Live mesh traffic visualization web component (<ce-mesh-viz>) + standalone demo page"
+runtime = "script"
+
+[script]
+interpreter = "node"
+entry = "demo/dev-server.mjs"

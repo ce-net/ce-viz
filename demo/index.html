@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ce-viz — watch the mesh work</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { max-width: 700px; margin: 3rem auto; padding: 0 1rem; }
+    p { opacity: 0.75; }
+  </style>
+</head>
+<body>
+  <h1>ce-viz</h1>
+  <p>The local node's real traffic, live. Solid blue pulses are typed requests/replies;
+     hollow amber pulses are typed events. Run any ce app and watch it appear.</p>
+  <ce-mesh-viz api="/api" caption="this node, right now"></ce-mesh-viz>
+  <script type="module" src="/viz.bundle.js"></script>
+</body>
+</html>

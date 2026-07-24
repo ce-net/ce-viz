@@ -1,0 +1,16 @@
+{
+  "name": "@ce-net/viz",
+  "version": "0.1.0",
+  "description": "Reusable live mesh visualization as a web component: <ce-mesh-viz> renders a node's real message traffic (typed calls, replies, events) with zero app integration. Embed it in any ce app, demo, or fleet dashboard.",
+  "license": "MIT",
+  "type": "module",
+  "repository": { "type": "git", "url": "git+https://github.com/ce-net/ce-viz.git" },
+  "exports": { ".": { "types": "./dist/viz.d.ts", "import": "./dist/viz.js" } },
+  "files": ["dist", "src", "README.md", "ceapp.toml"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && esbuild src/viz.ts --bundle --format=esm --outfile=dist/viz.bundle.js",
+    "dev": "npm run build && node demo/dev-server.mjs",
+    "prepare": "tsc -p tsconfig.json && esbuild src/viz.ts --bundle --format=esm --outfile=dist/viz.bundle.js"
+  },
+  "devDependencies": { "esbuild": "^0.24.0", "typescript": "^5.6.0" }
+}
